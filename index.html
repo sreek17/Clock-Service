@@ -1,0 +1,20 @@
+<html ng-app = "myApp">
+<head>
+    <script src="https://code.angularjs.org/1.5.5/angular.js"></script>
+    <script src="app.js"></script>
+    </head>
+    <body ng-controller = "myCntrl">
+    <h1>Clock App</h1>
+        Please enter your name: <input ng-model="name" type="text"><br>
+        Checkbox: <input type="checkbox" ng-model="chkBox"><br>
+        Date: <input type="date" ng-model="dateValue"><br>
+        Radio Valu: <input type="radio" ng-model="radioValue" value="opt1">Option1</input>
+    <input type="radio" ng-model="radioValue" value="opt2">Option2</input>
+<input type="radio" ng-model="radioValue" value="opt3">Option3</input>
+       <p>The current time is: {{newTime}}</p> 
+        <p>Your name is: {{name}}</p>
+ <p>Checkbox value is: {{chkBox}}</p>
+<p>Radio Button value is: {{radioValue}}</p>
+        <button ng-click="updateTime()">Click Me</button>
+    </body>
+</html>
